@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/screens/overdue.dart';
 
 class MyDrawer extends StatefulWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -59,8 +60,16 @@ class _MyDrawerState extends State<MyDrawer> {
           ListTile(
             title: const Text("Overdue",
                 style: TextStyle(color: Color.fromARGB(255, 147, 161, 243))),
-            leading: Icon(Icons.timer_off_rounded),
-            onTap: (){},
+            leading: Icon(
+              Icons.timer_off_rounded,
+              color: Colors.white,
+              size: 20,
+            ),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return const OverduePage();
+              }));
+            },
           ),
           const ListTile(
             leading: Icon(

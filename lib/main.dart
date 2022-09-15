@@ -22,14 +22,6 @@ void main() async {
     Todo(todoCategory: "School", taskList: []),
     Todo(todoCategory: "Fitness", taskList: []),
   ];
-  todoBox.values.forEach((category) {
-    category.taskList!.forEach((todo) {
-      if (todo.time.day < DateTime.now().day) {
-        category.taskList!.remove(todo);
-        category.save();
-      }
-    });
-  });
   todoBox.isEmpty ? todoBox.addAll(todoCategories) : null;
   runApp(
     MaterialApp(
