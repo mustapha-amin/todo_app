@@ -18,7 +18,7 @@ class _MyDrawerState extends State<MyDrawer> {
     var screenwidth = MediaQuery.of(context).size.width;
     return Drawer(
       width: screenwidth - 50,
-      backgroundColor: Colors.deepPurple[900],
+      backgroundColor: Colors.purple[900],
       child: ListView(
         children: [
           const DrawerHeader(child: FlutterLogo()),

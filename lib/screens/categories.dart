@@ -42,6 +42,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
         elevation: 0,
         title: const Text("Categories"),
         centerTitle: true,
+        backgroundColor: Colors.purple,
       ),
       body: ListView.builder(
         itemCount: categories.length,
@@ -118,6 +119,7 @@ class _CategoriesPageState extends State<CategoriesPage> {
             },
           );
         },
+        backgroundColor: Colors.purple,
         tooltip: "Add category",
         child: const Icon(Icons.add),
       ),
