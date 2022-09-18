@@ -26,7 +26,6 @@ void main() async {
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
-      
       home: HomeScreen(),
       routes: {
         '/categories': (context) => CategoriesPage(),

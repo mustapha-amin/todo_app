@@ -64,10 +64,15 @@ class _AddTaskState extends State<AddTask> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.purple[600],
-        title: const Text("Add a task"),
+        backgroundColor: Colors.purple[50],
+        foregroundColor: Colors.purple[500],
+        title: const Text(
+          "Add a task",
+          style: TextStyle(color: Colors.black),
+        ),
       ),
       resizeToAvoidBottomInset: false,
       body: Column(
@@ -82,6 +87,7 @@ class _AddTaskState extends State<AddTask> {
                 child: TextField(
                   cursorColor: Colors.purple,
                   controller: _controller1,
+                  
                   maxLines: 1,
                   decoration: const InputDecoration(
                       hintText: "Add task", icon: Icon(Icons.add_task)),
@@ -113,7 +119,7 @@ class _AddTaskState extends State<AddTask> {
                         labelPadding: const EdgeInsets.only(left: 7, right: 7),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10)),
-                        selectedColor: Colors.purple[600],
+                        selectedColor: Colors.purple[400],
                         label: Text(
                           category,
                           style: const TextStyle(color: Colors.black),

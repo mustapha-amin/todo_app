@@ -11,7 +11,7 @@ class MyDrawer extends StatefulWidget {
 class _MyDrawerState extends State<MyDrawer> {
   bool switchSelected = false;
   String aboutText =
-      """Et voluptate labore esse laboris dolor. ipsum sit do. Exercitation qui duis incididunt aliqua sunt nostrud amet enim excepteur. Sit dolore mollit ullamco culpa Lorem consequat commodo ad ullamco labore dolore. Ut anim voluptate magna proident excepteur.
+      """A simple todo app developed by mustapha
 """;
   @override
   Widget build(BuildContext context) {

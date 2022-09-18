@@ -24,6 +24,7 @@ class _OverduePageState extends State<OverduePage> {
           overdue.add(todo);
         }
       });
+
     });
     super.initState();
   }
@@ -31,9 +32,11 @@ class _OverduePageState extends State<OverduePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
         title: const Text("Overdue tasks"),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.purple[50],
+        foregroundColor: Colors.purple[500],
         elevation: 0,
       ),
       body: overdue.isEmpty

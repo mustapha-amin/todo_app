@@ -38,11 +38,13 @@ class _CategoriesPageState extends State<CategoriesPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
         elevation: 0,
         title: const Text("Categories"),
         centerTitle: true,
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.purple[50],
+        foregroundColor: Colors.purple[500],
       ),
       body: ListView.builder(
         itemCount: categories.length,

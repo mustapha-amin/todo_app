@@ -30,12 +30,13 @@ class _TodoViewerState extends State<TodoViewer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.purple[50],
       appBar: AppBar(
           title: Text(todos!.todoCategory,
               style: const TextStyle(fontWeight: FontWeight.bold)),
           elevation: 0,
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
+          backgroundColor: Colors.purple[50],
+          foregroundColor: Colors.purple,
           centerTitle: true),
       body: taskList.isEmpty
           ? const Center(

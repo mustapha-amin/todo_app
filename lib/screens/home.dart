@@ -98,6 +98,7 @@ class _HomeScreenState extends State<HomeScreen> {
           var category = todoBox.values.elementAt(index);
           int length = todoBox.getAt(index)!.taskList!.length;
           return Container(
+            
             constraints: const BoxConstraints(maxHeight: 300),
             padding: const EdgeInsets.all(8),
             height: 100,
@@ -120,7 +121,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(18),
                 ),
-                elevation: 5,
+                elevation: 2,
                 shadowColor: Colors.grey[400],
                 child: Column(
                   children: [
@@ -132,7 +133,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    addVerticalSpace(5),
+                    addVerticalSpace(15),
                     Text(length == 1 ? "$length task" : "$length tasks")
                   ],
                 ),
@@ -224,7 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         children: [
                           Text(
                             DateFormat().add_jm().format(item.time),
-                            style: const TextStyle(color: Colors.green),
+                            style: const TextStyle(color: Colors.purple),
                           ),
                           const Icon(Icons.alarm)
                         ],
