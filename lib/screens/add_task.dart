@@ -45,10 +45,11 @@ class _AddTaskState extends State<AddTask> {
       );
       todo.save();
       Navigator.pop(context);
-      NotificationApi().shownotification(
-          title: "New task added",
-          body: _controller1.text,
-          payload: 'task.abs');
+      NotificationApi.shownotification(
+        title: "New task added",
+        body: _controller1.text,
+        payload: 'task.abs',
+      );
     } else {
       showDialog(
         context: context,
@@ -87,7 +88,6 @@ class _AddTaskState extends State<AddTask> {
                 child: TextField(
                   cursorColor: Colors.purple,
                   controller: _controller1,
-                  
                   maxLines: 1,
                   decoration: const InputDecoration(
                       hintText: "Add task", icon: Icon(Icons.add_task)),

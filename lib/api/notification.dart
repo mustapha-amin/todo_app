@@ -19,7 +19,7 @@ class NotificationApi {
     );
   }
 
-  Future shownotification({
+  static Future shownotification({
     int id = 0,
     String? title,
     String? body,
