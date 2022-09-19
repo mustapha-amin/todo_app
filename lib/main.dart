@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl_standalone.dart';
+import 'package:todo_app/api/notification.dart';
 import 'package:todo_app/screens/categories.dart';
 import 'models/todo_model.dart';
 import 'screens/home.dart';
@@ -14,6 +15,7 @@ void main() async {
   Hive.registerAdapter(TodoModelAdapter());
   Hive.registerAdapter(TodoAdapter());
   await Hive.openBox<Todo>('todoBox');
+  await NotificationApi().init();
   // default categories
   Iterable<Todo> todoCategories = [
     Todo(todoCategory: "Personal", taskList: []),

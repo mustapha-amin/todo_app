@@ -45,7 +45,7 @@ class _AddTaskState extends State<AddTask> {
       );
       todo.save();
       Navigator.pop(context);
-      NotificationApi.shownotification(
+      NotificationApi().shownotification(
           title: "New task added",
           body: _controller1.text,
           payload: 'task.abs');
