@@ -94,11 +94,11 @@ class _HomeScreenState extends State<HomeScreen> {
       child: ListView.builder(
         itemCount: todoBox.values.length,
         scrollDirection: Axis.horizontal,
+        physics: const BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           var category = todoBox.values.elementAt(index);
           int length = todoBox.getAt(index)!.taskList!.length;
           return Container(
-            
             constraints: const BoxConstraints(maxHeight: 300),
             padding: const EdgeInsets.all(8),
             height: 100,

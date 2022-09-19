@@ -82,9 +82,11 @@ class _OverduePageState extends State<OverduePage> {
                                 }
                               });
                             });
-                            setState(() {
-                              overdue.remove(item);
-                            });
+                            if(this.mounted) {
+                              setState(() {
+                                overdue.remove(item);
+                              });
+                            }
                           });
                         },
                       ),

@@ -10,8 +10,7 @@ class MyDrawer extends StatefulWidget {
 
 class _MyDrawerState extends State<MyDrawer> {
   bool switchSelected = false;
-  String aboutText =
-      """A simple todo app developed by mustapha
+  String aboutText = """A simple todo app developed by mustapha
 """;
   @override
   Widget build(BuildContext context) {
@@ -60,7 +59,7 @@ class _MyDrawerState extends State<MyDrawer> {
           ListTile(
             title: const Text("Overdue",
                 style: TextStyle(color: Color.fromARGB(255, 147, 161, 243))),
-            leading: Icon(
+            leading: const Icon(
               Icons.timer_off_rounded,
               color: Colors.white,
               size: 20,
@@ -93,7 +92,7 @@ class _MyDrawerState extends State<MyDrawer> {
             child: const Text(
               "About",
               style: TextStyle(
-                color: Colors.white,
+                color: Color.fromARGB(255, 147, 161, 243),
               ),
             ),
           )
