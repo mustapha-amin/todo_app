@@ -41,6 +41,7 @@ dependencies:
   intl: ^0.17.0
   date_time_picker: ^2.1.0
   flutter_local_notifications: ^9.9.1
+  awesome_notifications: ^0.6.21
 
 dev_dependencies:
   flutter_test:
